@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- grashhopper api key -->
+    <string name="gh_api_key" translatable="false">324bcca3-b8b6-4523-8b4f-7b09ccc7fca1</string>
+
+    <!-- bing maps key -->
+    <string name="bing_key" translatable="false">Ag19dn0o47eMh4JmJuegr9dZ62MTkWaT6iG1G9sb1NFaUFe-ML2_ix3p31_93jQl</string>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NearestPrinting</string>
+    <string name="store_name">Store Name</string>
+    <string name="store_address">Store Address</string>
+    <string name="store_time">Open Time</string>
+    <string name="store_open">Open</string>
+    <string name="store_close">Close</string>
+    <string name="nearest_printing">Nearest Printing</string>
+    <string name="store_open_time">%1$s - %2$s WIB</string>
+    <string name="service_name">Service Name</string>
+    <string name="store_minimal_order">Minimal Order</string>
+    <string name="service_price">Service Price</string>
+    <string name="service_minimal">Min. Order : %1$s %2$s</string>
+    <string name="service_price_format">Rp.%1$s/%2$s</string>
+    <string name="open_map">Open Map</string>
+    <string name="store_range">Store Range</string>
+</resources>

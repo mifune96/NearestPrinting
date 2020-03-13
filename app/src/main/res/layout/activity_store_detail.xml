@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StoreDetailActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@android:color/black"/>
+
+    <ImageView
+        android:id="@+id/imageBG"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:alpha=".9"
+        android:src="@drawable/pattern"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/storeWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignBottom="@id/imageBG"
+        android:layout_marginBottom="-70dp"
+        android:elevation="5dp">
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageWrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp">
+
+                <ImageView
+                    android:id="@+id/storeImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@color/imageBackground"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/storeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageWrapper"
+                android:text="Store Name"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp" />
+
+            <LinearLayout
+                android:id="@+id/timeWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/storeName"
+                android:layout_below="@id/storeName"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:alpha=".5"
+                    android:src="@drawable/ic_access_time"/>
+
+                <TextView
+                    android:id="@+id/storeTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:text="@string/store_time"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/storeName"
+                android:layout_below="@id/timeWrapper"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:alpha=".5"
+                    android:src="@drawable/ic_location"/>
+
+                <TextView
+                    android:id="@+id/storeAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/store_time"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageWrapper"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btCall"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="Call"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/button_tint_bg"
+                    android:textColor="@color/colorTint"
+                    android:textAllCaps="false"
+                    android:drawableStart="@drawable/ic_call"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btChat"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="Chat"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/button_tint_bg"
+                    android:textColor="@color/colorTint"
+                    android:textAllCaps="false"
+                    android:drawableStart="@drawable/ic_chat"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btNavigate"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="Navigate"
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/button_tint_bg"
+                    android:textColor="@color/colorTint"
+                    android:textAllCaps="false"
+                    android:drawableStart="@drawable/ic_navigation"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/serviceList"
+        android:layout_below="@id/storeWrapper"
+        android:layout_marginTop="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
